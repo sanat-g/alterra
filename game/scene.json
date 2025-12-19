@@ -1,241 +1,230 @@
 {
-  "scenario": "Krakatoa did not erupt",
+  "scenario": "Inca Empire Never Fell",
   "year": 2025,
   "focus_region": {
-	"country": "Indonesia",
-	"admin1": "West Java Province",
-	"nearest_city": "Banten",
-	"lat": -6.15,
-	"lon": 106.75,
-	"why_here": "Krakatoa's absence would have prevented massive tsunamis and volcanic ash fall, sparing the coastal areas of West Java"
+    "country": "Peru",
+    "admin1": "Cusco Region",
+    "nearest_city": "Cusco",
+    "lat": -13.5167,
+    "lon": -71.9667,
+    "why_here": "The Cusco region is the heartland of the Inca Empire and would have continued to thrive under their rule."
   },
   "scene": {
-	"size_m": [
-	  250,
-	  250
-	],
-	"terrain": {
-	  "type": "flat|hilly",
-	  "seed": 12345
-	},
-	"biome": "tropical",
-	"mood": {
-	  "sky": "clear|sunset",
-	  "lighting": "warm"
-	},
-	"pois": [
-	  {
-		"type": "temple",
-		"style": "ancient",
-		"name": "Pura Gede",
-		"pos": [
-		  -60,
-		  -40
-		],
-		"radius_m": 12,
-		"one_liner": "This Hindu temple was spared from volcanic ash and tsunamis.",
-		"because": "Lack of Krakatoa eruption preserved the area's cultural heritage.",
-		"depends_on": [
-          "Krakatoa Ash-Free Port"
-		]
-	  },
-	  {
-		"type": "market",
-		"style": "modern",
-		"name": "Banten Market",
-		"pos": [
-		  60,
-		  -80
-		],
-		"radius_m": 12,
-		"one_liner": "Trade flourished in Banten as it remained a safe and stable port.",
-		"because": "Krakatoa's absence maintained the economic stability of West Java.",
-		"depends_on": [
-		  "Pura Gede",
-          "Krakatoa Ash-Free Port"
-		]
-	  },
-	  {
-		"type": "lab",
-		"style": "industrial",
-		"name": "Geological Research Lab",
-		"pos": [
-		  -80,
-		  -60
-		],
-		"radius_m": 12,
-		"one_liner": "Scientists from around the world flocked to Banten to study Krakatoa's absence.",
-		"because": "Krakatoa's non-eruption allowed for a unique scientific opportunity.",
-		"depends_on": [
-		  "Banten Market",
-          "Pura Gede"
-		]
-	  },
-	  {
-		"type": "factory",
-		"style": "industrial",
-		"name": "Indonesian Textiles Factory",
-		"pos": [
-		  40,
-		  -20
-		],
-		"radius_m": 12,
-		"one_liner": "Textile production boomed as the region's economy continued to thrive.",
-		"because": "Krakatoa's absence maintained a stable economic climate.",
-		"depends_on": [
-		  "Banten Market",
-          "Geological Research Lab"
-		]
-	  },
-	  {
-		"type": "nest",
-		"style": "prehistoric",
-		"name": "Ancient Bird Nest",
-		"pos": [
-		  -100,
-		  -20
-		],
-		"radius_m": 12,
-		"one_liner": "This ancient bird nest was preserved from volcanic ash and tsunamis.",
-		"because": "Lack of Krakatoa eruption protected the region's natural habitats.",
-		"depends_on": [
-		  "Pura Gede",
-          "Krakatoa Ash-Free Port"
-		]
-	  },
-	  {
-		"type": "plaza",
-		"style": "medieval",
-		"name": "Banten Town Square",
-		"pos": [
-		  20,
-		  -40
-		],
-		"radius_m": 12,
-		"one_liner": "The town square remained a hub of activity as trade and commerce continued.",
-		"because": "Krakatoa's absence maintained the region's economic stability.",
-		"depends_on": [
-		  "Banten Market",
-          "Geological Research Lab"
-		]
-	  },
-	  {
-		"type": "monument",
-		"style": "modern",
-		"name": "Krakatoa Memorial",
-		"pos": [
-		  -40,
-		  -80
-		],
-		"radius_m": 12,
-		"one_liner": "A monument was erected to commemorate the region's good fortune.",
-		"because": "The non-eruption of Krakatoa was a rare blessing for West Java.",
-		"depends_on": [
-		  "Banten Market",
-          "Pura Gede"
-		]
-	  },
-	  {
-		"type": "watchtower",
-		"style": "ancient",
-		"name": "West Java Watchtower",
-		"pos": [
-		  80,
-		  -60
-		],
-		"radius_m": 12,
-		"one_liner": "The watchtower remained vigilant as trade and commerce continued.",
-		"because": "Krakatoa's absence maintained the region's economic stability.",
-		"depends_on": [
-		  "Banten Market",
-          "Geological Research Lab"
-		]
-	  },
-	  {
-		"type": "factory",
-		"style": "industrial",
-		"name": "Indonesian Shipyard",
-		"pos": [
-		  -20,
-		  -40
-		],
-		"radius_m": 12,
-		"one_liner": "Shipbuilding continued to thrive as the region's economy remained stable.",
-		"because": "Krakatoa's absence maintained a favorable economic climate.",
-		"depends_on": [
-		  "Banten Market",
-          "Geological Research Lab"
-		]
-	  },
-	  {
-		"type": "lab",
-		"style": "industrial",
-		"name": "Marine Research Facility",
-		"pos": [
-		  60,
-		  -20
-		],
-		"radius_m": 12,
-		"one_liner": "Scientists from around the world studied the ocean's effects on the region.",
-		"because": "Krakatoa's non-eruption provided a unique opportunity for marine research.",
-		"depends_on": [
-		  "Banten Market",
-          "Geological Research Lab"
-		]
-	  },
-	  {
-		"type": "market",
-		"style": "modern",
-		"name": "Krakatoa Market",
-		"pos": [
-		  -80,
-		  -20
-		],
-		"radius_m": 12,
-		"one_liner": "Trade continued to flourish in the region as it remained a safe and stable port.",
-		"because": "Krakatoa's absence maintained the economic stability of West Java.",
-		"depends_on": [
-		  "Banten Market",
-          "Pura Gede"
-		]
-	  },
-	  {
-		"type": "fort",
-		"style": "medieval",
-		"name": "West Java Fortress",
-		"pos": [
-		  40,
-		  -60
-		],
-		"radius_m": 12,
-		"one_liner": "The fortress remained a symbol of the region's stability and prosperity.",
-		"because": "Krakatoa's absence maintained the region's economic stability.",
-		"depends_on": [
-		  "Banten Market",
-          "Geological Research Lab"
-		]
-	  },
-	  {
-		"type": "temple",
-		"style": "ancient",
-		"name": "Pura Kraton",
-		"pos": [
-		  -40,
-		  -80
-		],
-		"radius_m": 12,
-		"one_liner": "This Hindu temple was spared from volcanic ash and tsunamis.",
-		"because": "Lack of Krakatoa eruption preserved the area's cultural heritage.",
-		"depends_on": [
-		  "Pura Gede",
-          "Krakatoa Ash-Free Port"
-		]
-	  }
-	]
+    "size_m": [
+      250,
+      250
+    ],
+    "terrain": {
+      "type": "hilly",
+      "seed": 12345
+    },
+    "biome": "temperate",
+    "mood": {
+      "sky": "clear",
+      "lighting": "warm"
+    },
+    "pois": [
+      {
+        "type": "plaza",
+        "style": "ancient",
+        "name": "Qurqa Plaza",
+        "pos": [
+          0,
+          75
+        ],
+        "radius_m": 12,
+        "one_liner": "A bustling hub of trade and commerce in the heart of Cusco.",
+        "because": "The plaza has been a central gathering place for centuries, and its continued prosperity is a testament to the enduring legacy of the Inca Empire.",
+        "depends_on": []
+      },
+      {
+        "type": "temple",
+        "style": "ancient",
+        "name": "Sacsayhuam\u00e1n Temple",
+        "pos": [
+          -50,
+          25
+        ],
+        "radius_m": 20,
+        "one_liner": "A majestic temple complex built into the side of a hill overlooking Cusco.",
+        "because": "The Inca Empire's continued control over the region has allowed for ongoing restoration and preservation efforts to protect this sacred site.",
+        "depends_on": [
+          "Qurqa Plaza"
+        ]
+      },
+      {
+        "type": "market",
+        "style": "medieval",
+        "name": "Cusco Market",
+        "pos": [
+          100,
+          -25
+        ],
+        "radius_m": 15,
+        "one_liner": "A vibrant marketplace where locals and travelers come to exchange goods and stories.",
+        "because": "The Inca Empire's continued control over trade routes has allowed for the growth of a thriving market in Cusco.",
+        "depends_on": [
+          "Sacsayhuam\u00e1n Temple"
+        ]
+      },
+      {
+        "type": "lab",
+        "style": "industrial",
+        "name": "Cusco Research Institute",
+        "pos": [
+          -100,
+          -75
+        ],
+        "radius_m": 10,
+        "one_liner": "A state-of-the-art research facility focused on preserving and advancing traditional Inca knowledge.",
+        "because": "The Inca Empire's continued commitment to scientific progress has led to the establishment of this cutting-edge institution.",
+        "depends_on": [
+          "Cusco Market"
+        ]
+      },
+      {
+        "type": "fort",
+        "style": "prehistoric",
+        "name": "Tambomachay Fortification",
+        "pos": [
+          25,
+          -100
+        ],
+        "radius_m": 18,
+        "one_liner": "A ancient fortress built to protect the Inca Empire's water sources and supply lines.",
+        "because": "The continued importance of this strategic location has led to ongoing efforts to maintain and upgrade its defenses.",
+        "depends_on": [
+          "Qurqa Plaza",
+          "Sacsayhuam\u00e1n Temple"
+        ]
+      },
+      {
+        "type": "monument",
+        "style": "hybrid",
+        "name": "Cusco Monument to the Sun",
+        "pos": [
+          125,
+          -25
+        ],
+        "radius_m": 12,
+        "one_liner": "A massive stone monument dedicated to the worship of Inti, the Inca sun god.",
+        "because": "The continued reverence for the Inca pantheon has led to the construction of this grand tribute to their deity.",
+        "depends_on": [
+          "Cusco Market",
+          "Tambomachay Fortification"
+        ]
+      },
+      {
+        "type": "watchtower",
+        "style": "ancient",
+        "name": "Qenqo Watchtower",
+        "pos": [
+          -125,
+          -75
+        ],
+        "radius_m": 20,
+        "one_liner": "A ancient watchtower built to monitor the surrounding countryside for signs of threat.",
+        "because": "The continued need for vigilance has led to ongoing maintenance and repair efforts at this strategic outpost.",
+        "depends_on": [
+          "Cusco Research Institute"
+        ]
+      },
+      {
+        "type": "market",
+        "style": "medieval",
+        "name": "Aguas Calientes Market",
+        "pos": [
+          75,
+          -100
+        ],
+        "radius_m": 15,
+        "one_liner": "A bustling marketplace catering to the needs of travelers and traders on the nearby train line.",
+        "because": "The Inca Empire's continued control over transportation routes has allowed for the growth of this thriving market.",
+        "depends_on": [
+          "Cusco Monument to the Sun"
+        ]
+      },
+      {
+        "type": "lab",
+        "style": "industrial",
+        "name": "Aguas Calientes Research Facility",
+        "pos": [
+          -50,
+          -125
+        ],
+        "radius_m": 10,
+        "one_liner": "A cutting-edge research facility focused on preserving and advancing traditional Inca knowledge.",
+        "because": "The Inca Empire's continued commitment to scientific progress has led to the establishment of this state-of-the-art institution.",
+        "depends_on": [
+          "Tambomachay Fortification"
+        ]
+      },
+      {
+        "type": "fort",
+        "style": "prehistoric",
+        "name": "Qorikancha Fortification",
+        "pos": [
+          100,
+          25
+        ],
+        "radius_m": 18,
+        "one_liner": "An ancient fortress built to protect the Inca Empire's sacred sites and spiritual leaders.",
+        "because": "The continued importance of this strategic location has led to ongoing efforts to maintain and upgrade its defenses.",
+        "depends_on": [
+          "Qenqo Watchtower"
+        ]
+      },
+      {
+        "type": "monument",
+        "style": "hybrid",
+        "name": "Cusco Monument to the Earth",
+        "pos": [
+          -25,
+          50
+        ],
+        "radius_m": 12,
+        "one_liner": "A massive stone monument dedicated to the worship of Pachamama, the Inca earth mother.",
+        "because": "The continued reverence for the Inca pantheon has led to the construction of this grand tribute to their deity.",
+        "depends_on": [
+          "Cusco Market",
+          "Qorikancha Fortification"
+        ]
+      },
+      {
+        "type": "plaza",
+        "style": "ancient",
+        "name": "Sapa Plaza",
+        "pos": [
+          25,
+          75
+        ],
+        "radius_m": 12,
+        "one_liner": "A quiet plaza dedicated to the contemplation and introspection of Inca spiritual leaders.",
+        "because": "The continued importance of this sacred site has led to ongoing efforts to maintain its tranquility and beauty.",
+        "depends_on": [
+          "Cusco Monument to the Earth"
+        ]
+      },
+      {
+        "type": "lab",
+        "style": "industrial",
+        "name": "Sacred Valley Research Institute",
+        "pos": [
+          -100,
+          25
+        ],
+        "radius_m": 10,
+        "one_liner": "A cutting-edge research facility focused on preserving and advancing traditional Inca knowledge.",
+        "because": "The Inca Empire's continued commitment to scientific progress has led to the establishment of this state-of-the-art institution.",
+        "depends_on": [
+          "Sapa Plaza"
+        ]
+      }
+    ]
   },
   "global_context": [
-	"The absence of Krakatoa's eruption had a profound impact on West Java, preserving its cultural and economic heritage.",
-	"Scientists from around the world flocked to Banten to study the region's unique conditions.",
-    "The non-eruption of Krakatoa provided a rare opportunity for marine research and exploration."
+    "The Inca Empire never fell, and its legacy continues to shape the lives of people in the Andes highlands.",
+    "The region is a thriving hub of trade, commerce, and innovation, with a strong emphasis on preserving traditional knowledge and culture.",
+    "However, tensions are rising between the Inca Empire's continued rule and the growing influence of external powers seeking to assert their own dominance over the region."
   ]
 }
