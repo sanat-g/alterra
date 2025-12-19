@@ -43,8 +43,6 @@ func _try_pick() -> void:
 	if collider_obj == null:
 		return
 
-	# Ray usually hits StaticBody3D / CollisionObject3D child.
-	# We stored meta on the instantiated POI root, so climb parents until we find it.
 	var meta_node: Node = _find_meta_owner(collider_obj)
 	if meta_node == null:
 		if info_label != null:
@@ -63,7 +61,6 @@ func _find_meta_owner(collider_obj: Object) -> Node:
 
 	var n: Node = collider_obj as Node
 
-	# Walk up to ~10 parents to find a node with the meta
 	var steps := 0
 	while n != null and steps < 10:
 		if n.has_meta("poi_name"):

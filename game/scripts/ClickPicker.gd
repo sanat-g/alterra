@@ -29,7 +29,6 @@ func _pick():
 		label.text = "Clicked: (no collider node)"
 		return
 
-	# Collider may be a child; walk up until we find POI metadata
 	while n != null and not n.has_meta("poi_name"):
 		n = n.get_parent()
 

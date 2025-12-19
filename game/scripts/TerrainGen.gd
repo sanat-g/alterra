@@ -1,10 +1,11 @@
 extends Node3D
 
-@export var size: int = 250        # meters (matches JSON)
-@export var resolution: int = 128  # grid size (higher = smoother, slower)
+@export var size: int = 250        
+@export var resolution: int = 128
 @export var sea_level: float = 0.0
 
 var _mesh_instance: MeshInstance3D
+
 
 func _ready():
 	_mesh_instance = MeshInstance3D.new()
@@ -61,7 +62,6 @@ func _generate(ttype: String, seed: int):
 	var half := size * 0.5
 	var step := float(size) / float(resolution - 1)
 
-	# Simple river: carve a shallow channel along x=0
 	for z_i in range(resolution - 1):
 		for x_i in range(resolution - 1):
 			var p00 = _vertex(x_i, z_i, half, step, noise, amp, ttype)
@@ -83,11 +83,9 @@ func _vertex(x_i: int, z_i: int, half: float, step: float, noise: FastNoiseLite,
 
 	var h := noise.get_noise_2d(x, z) * amp
 
-	# coastal: slope down to one side
 	if ttype == "coastal":
 		h -= (x / (half)) * 3.0
 
-	# river: carve a channel near x=0
 	if ttype == "river":
 		var d: float = absf(x)
 		var channel: float = clampf(1.0 - (d / 12.0), 0.0, 1.0) # width ~24m

@@ -58,7 +58,7 @@ RELATIONSHIP RULES (must follow):
 
 RULES:
 - Choose ONE focus region most impacted by the scenario.
-- Produce 6–10 POIs.
+- Produce 12–16 POIs.
 - pos x,z must be within -125..125.
 - depends_on must reference existing POI names only.
 - Keep it visually distinctive and plausible.
@@ -107,10 +107,22 @@ def run_ollama(prompt: str) -> str:
     return p.stdout.decode("utf-8")
 
 def extract_json(text: str) -> dict:
-    m = re.search(r"(\{[\s\S]*\})\s*$", text.strip())
-    if not m:
+    s = text.strip()
+
+    # Find the first '{' and last '}' anywhere in the output
+    start = s.find("{")
+    end = s.rfind("}")
+
+    if start == -1 or end == -1 or end <= start:
         raise ValueError("No JSON object found.")
-    return json.loads(m.group(1))
+
+    candidate = s[start:end+1]
+
+    try:
+        return json.loads(candidate)
+    except json.JSONDecodeError as e:
+        # Helpful debug so you can see what it returned
+        raise ValueError(f"Found braces but JSON was invalid: {e}\n\nRaw model output:\n{s}")
 
 def main():
     scenario = "What if dinosaurs never died?"

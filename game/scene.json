@@ -1,13 +1,13 @@
 {
-  "scenario": "What if British never invaded India?",
+  "scenario": "Krakatoa did not erupt",
   "year": 2025,
   "focus_region": {
-	"country": "India",
-	"admin1": "West Bengal",
-	"nearest_city": "Kolkata",
-	"lat": 22.5868,
-	"lon": 88.3789,
-	"why_here": "The lack of British colonization had a significant impact on the economic and cultural development of West Bengal, making it an ideal focus region for this scenario."
+	"country": "Indonesia",
+	"admin1": "West Java Province",
+	"nearest_city": "Banten",
+	"lat": -6.15,
+	"lon": 106.75,
+	"why_here": "Krakatoa's absence would have prevented massive tsunamis and volcanic ash fall, sparing the coastal areas of West Java"
   },
   "scene": {
 	"size_m": [
@@ -15,144 +15,227 @@
 	  250
 	],
 	"terrain": {
-	  "type": "flat",
+	  "type": "flat|hilly",
 	  "seed": 12345
 	},
 	"biome": "tropical",
 	"mood": {
-	  "sky": "clear",
+	  "sky": "clear|sunset",
 	  "lighting": "warm"
 	},
 	"pois": [
 	  {
-		"type": "market",
+		"type": "temple",
 		"style": "ancient",
-		"name": "Ganges Bazaar",
+		"name": "Pura Gede",
 		"pos": [
-		  -70,
+		  -60,
+		  -40
+		],
+		"radius_m": 12,
+		"one_liner": "This Hindu temple was spared from volcanic ash and tsunamis.",
+		"because": "Lack of Krakatoa eruption preserved the area's cultural heritage.",
+		"depends_on": [
+          "Krakatoa Ash-Free Port"
+		]
+	  },
+	  {
+		"type": "market",
+		"style": "modern",
+		"name": "Banten Market",
+		"pos": [
+		  60,
 		  -80
 		],
 		"radius_m": 12,
-		"one_liner": "A bustling marketplace selling exotic spices and textiles along the banks of the Ganges River.",
-		"because": "The lack of British trade restrictions allowed local merchants to thrive, creating a vibrant market culture.",
+		"one_liner": "Trade flourished in Banten as it remained a safe and stable port.",
+		"because": "Krakatoa's absence maintained the economic stability of West Java.",
 		"depends_on": [
-          "Bengal Fort"
+		  "Pura Gede",
+          "Krakatoa Ash-Free Port"
 		]
 	  },
 	  {
 		"type": "lab",
 		"style": "industrial",
-		"name": "Calcutta Research Institute",
+		"name": "Geological Research Lab",
 		"pos": [
-		  -30,
-		  -40
+		  -80,
+		  -60
 		],
 		"radius_m": 12,
-		"one_liner": "A cutting-edge research facility focused on innovative technologies and sustainable practices.",
-		"because": "The absence of British colonial influence led to increased investment in local education and scientific inquiry.",
+		"one_liner": "Scientists from around the world flocked to Banten to study Krakatoa's absence.",
+		"because": "Krakatoa's non-eruption allowed for a unique scientific opportunity.",
 		"depends_on": [
-		  "Ganges Bazaar",
-          "Bengal Fort"
-		]
-	  },
-	  {
-		"type": "temple",
-		"style": "ancient",
-		"name": "Kolkata Temple",
-		"pos": [
-		  50,
-		  60
-		],
-		"radius_m": 12,
-		"one_liner": "A stunning ancient temple complex dedicated to the worship of Hindu deities.",
-		"because": "The lack of British destruction allowed local religious traditions to flourish, preserving cultural heritage.",
-		"depends_on": [
-          "Bengal Fort"
+		  "Banten Market",
+          "Pura Gede"
 		]
 	  },
 	  {
 		"type": "factory",
 		"style": "industrial",
-		"name": "Calcutta Textile Mill",
+		"name": "Indonesian Textiles Factory",
 		"pos": [
-		  -90,
-		  -100
+		  40,
+		  -20
 		],
 		"radius_m": 12,
-		"one_liner": "A large textile mill producing high-quality fabrics for the local market.",
-		"because": "The absence of British colonial exploitation allowed local entrepreneurs to invest in industry and infrastructure.",
+		"one_liner": "Textile production boomed as the region's economy continued to thrive.",
+		"because": "Krakatoa's absence maintained a stable economic climate.",
 		"depends_on": [
-		  "Ganges Bazaar",
-          "Calcutta Research Institute"
+		  "Banten Market",
+          "Geological Research Lab"
 		]
 	  },
 	  {
 		"type": "nest",
 		"style": "prehistoric",
-		"name": "Kolkata Bird Sanctuary",
+		"name": "Ancient Bird Nest",
 		"pos": [
-		  100,
-		  110
+		  -100,
+		  -20
 		],
 		"radius_m": 12,
-		"one_liner": "A protected area preserving the natural habitats of local bird species.",
-		"because": "The lack of British deforestation efforts allowed native ecosystems to thrive, supporting biodiversity.",
+		"one_liner": "This ancient bird nest was preserved from volcanic ash and tsunamis.",
+		"because": "Lack of Krakatoa eruption protected the region's natural habitats.",
 		"depends_on": [
-          "Kolkata Temple"
+		  "Pura Gede",
+          "Krakatoa Ash-Free Port"
+		]
+	  },
+	  {
+		"type": "plaza",
+		"style": "medieval",
+		"name": "Banten Town Square",
+		"pos": [
+		  20,
+		  -40
+		],
+		"radius_m": 12,
+		"one_liner": "The town square remained a hub of activity as trade and commerce continued.",
+		"because": "Krakatoa's absence maintained the region's economic stability.",
+		"depends_on": [
+		  "Banten Market",
+          "Geological Research Lab"
+		]
+	  },
+	  {
+		"type": "monument",
+		"style": "modern",
+		"name": "Krakatoa Memorial",
+		"pos": [
+		  -40,
+		  -80
+		],
+		"radius_m": 12,
+		"one_liner": "A monument was erected to commemorate the region's good fortune.",
+		"because": "The non-eruption of Krakatoa was a rare blessing for West Java.",
+		"depends_on": [
+		  "Banten Market",
+          "Pura Gede"
+		]
+	  },
+	  {
+		"type": "watchtower",
+		"style": "ancient",
+		"name": "West Java Watchtower",
+		"pos": [
+		  80,
+		  -60
+		],
+		"radius_m": 12,
+		"one_liner": "The watchtower remained vigilant as trade and commerce continued.",
+		"because": "Krakatoa's absence maintained the region's economic stability.",
+		"depends_on": [
+		  "Banten Market",
+          "Geological Research Lab"
+		]
+	  },
+	  {
+		"type": "factory",
+		"style": "industrial",
+		"name": "Indonesian Shipyard",
+		"pos": [
+		  -20,
+		  -40
+		],
+		"radius_m": 12,
+		"one_liner": "Shipbuilding continued to thrive as the region's economy remained stable.",
+		"because": "Krakatoa's absence maintained a favorable economic climate.",
+		"depends_on": [
+		  "Banten Market",
+          "Geological Research Lab"
+		]
+	  },
+	  {
+		"type": "lab",
+		"style": "industrial",
+		"name": "Marine Research Facility",
+		"pos": [
+		  60,
+		  -20
+		],
+		"radius_m": 12,
+		"one_liner": "Scientists from around the world studied the ocean's effects on the region.",
+		"because": "Krakatoa's non-eruption provided a unique opportunity for marine research.",
+		"depends_on": [
+		  "Banten Market",
+          "Geological Research Lab"
+		]
+	  },
+	  {
+		"type": "market",
+		"style": "modern",
+		"name": "Krakatoa Market",
+		"pos": [
+		  -80,
+		  -20
+		],
+		"radius_m": 12,
+		"one_liner": "Trade continued to flourish in the region as it remained a safe and stable port.",
+		"because": "Krakatoa's absence maintained the economic stability of West Java.",
+		"depends_on": [
+		  "Banten Market",
+          "Pura Gede"
 		]
 	  },
 	  {
 		"type": "fort",
 		"style": "medieval",
-		"name": "Bengal Fort",
+		"name": "West Java Fortress",
 		"pos": [
-		  -10,
-		  -20
+		  40,
+		  -60
 		],
 		"radius_m": 12,
-		"one_liner": "A historic fortification built by local rulers to protect against external threats.",
-		"because": "The absence of British colonial aggression allowed local leaders to maintain control over their territories.",
+		"one_liner": "The fortress remained a symbol of the region's stability and prosperity.",
+		"because": "Krakatoa's absence maintained the region's economic stability.",
 		"depends_on": [
-          "Kolkata Temple"
+		  "Banten Market",
+          "Geological Research Lab"
 		]
 	  },
 	  {
-		"type": "plaza",
-		"style": "modern",
-		"name": "Calcutta City Hall Plaza",
+		"type": "temple",
+		"style": "ancient",
+		"name": "Pura Kraton",
 		"pos": [
-		  150,
-		  160
+		  -40,
+		  -80
 		],
 		"radius_m": 12,
-		"one_liner": "A vibrant public square hosting cultural events and community gatherings.",
-		"because": "The lack of British administrative control allowed local governments to prioritize public services and civic engagement.",
+		"one_liner": "This Hindu temple was spared from volcanic ash and tsunamis.",
+		"because": "Lack of Krakatoa eruption preserved the area's cultural heritage.",
 		"depends_on": [
-		  "Ganges Bazaar",
-          "Calcutta Research Institute"
-		]
-	  },
-	  {
-		"type": "monument",
-		"style": "hybrid",
-		"name": "Kolkata Memorial",
-		"pos": [
-		  250,
-		  260
-		],
-		"radius_m": 12,
-		"one_liner": "A memorial dedicated to the heroes of India's struggle for independence.",
-		"because": "The absence of British colonial legacy allowed local communities to honor their own historical figures and events.",
-		"depends_on": [
-		  "Kolkata Temple",
-          "Bengal Fort"
+		  "Pura Gede",
+          "Krakatoa Ash-Free Port"
 		]
 	  }
 	]
   },
   "global_context": [
-	"The lack of British colonization in India led to a unique cultural and economic development trajectory.",
-	"West Bengal emerged as a hub for innovation, trade, and education due to the absence of British restrictions.",
-    "The region's history is marked by a strong emphasis on local self-governance, scientific inquiry, and community engagement."
+	"The absence of Krakatoa's eruption had a profound impact on West Java, preserving its cultural and economic heritage.",
+	"Scientists from around the world flocked to Banten to study the region's unique conditions.",
+    "The non-eruption of Krakatoa provided a rare opportunity for marine research and exploration."
   ]
 }
