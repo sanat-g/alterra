@@ -1,230 +1,153 @@
 {
-  "scenario": "Inca Empire Never Fell",
+  "scenario": "Pharaohs Never Existed",
   "year": 2025,
   "focus_region": {
-    "country": "Peru",
-    "admin1": "Cusco Region",
-    "nearest_city": "Cusco",
-    "lat": -13.5167,
-    "lon": -71.9667,
-    "why_here": "The Cusco region is the heartland of the Inca Empire and would have continued to thrive under their rule."
+	"country": "Egypt",
+	"admin1": "New Valley Governorate",
+	"nearest_city": "Kharga",
+	"lat": 26.0,
+	"lon": 30.6,
+	"why_here": "The New Valley region was a major hub for ancient Egyptian civilization, and the absence of pharaohs would have dramatically altered its development."
   },
   "scene": {
-    "size_m": [
-      250,
-      250
-    ],
-    "terrain": {
-      "type": "hilly",
-      "seed": 12345
-    },
-    "biome": "temperate",
-    "mood": {
-      "sky": "clear",
-      "lighting": "warm"
-    },
-    "pois": [
-      {
-        "type": "plaza",
-        "style": "ancient",
-        "name": "Qurqa Plaza",
-        "pos": [
-          0,
-          75
-        ],
-        "radius_m": 12,
-        "one_liner": "A bustling hub of trade and commerce in the heart of Cusco.",
-        "because": "The plaza has been a central gathering place for centuries, and its continued prosperity is a testament to the enduring legacy of the Inca Empire.",
-        "depends_on": []
-      },
-      {
-        "type": "temple",
-        "style": "ancient",
-        "name": "Sacsayhuam\u00e1n Temple",
-        "pos": [
-          -50,
-          25
-        ],
-        "radius_m": 20,
-        "one_liner": "A majestic temple complex built into the side of a hill overlooking Cusco.",
-        "because": "The Inca Empire's continued control over the region has allowed for ongoing restoration and preservation efforts to protect this sacred site.",
-        "depends_on": [
-          "Qurqa Plaza"
-        ]
-      },
-      {
-        "type": "market",
-        "style": "medieval",
-        "name": "Cusco Market",
-        "pos": [
-          100,
-          -25
-        ],
-        "radius_m": 15,
-        "one_liner": "A vibrant marketplace where locals and travelers come to exchange goods and stories.",
-        "because": "The Inca Empire's continued control over trade routes has allowed for the growth of a thriving market in Cusco.",
-        "depends_on": [
-          "Sacsayhuam\u00e1n Temple"
-        ]
-      },
-      {
-        "type": "lab",
-        "style": "industrial",
-        "name": "Cusco Research Institute",
-        "pos": [
-          -100,
-          -75
-        ],
-        "radius_m": 10,
-        "one_liner": "A state-of-the-art research facility focused on preserving and advancing traditional Inca knowledge.",
-        "because": "The Inca Empire's continued commitment to scientific progress has led to the establishment of this cutting-edge institution.",
-        "depends_on": [
-          "Cusco Market"
-        ]
-      },
-      {
-        "type": "fort",
-        "style": "prehistoric",
-        "name": "Tambomachay Fortification",
-        "pos": [
-          25,
-          -100
-        ],
-        "radius_m": 18,
-        "one_liner": "A ancient fortress built to protect the Inca Empire's water sources and supply lines.",
-        "because": "The continued importance of this strategic location has led to ongoing efforts to maintain and upgrade its defenses.",
-        "depends_on": [
-          "Qurqa Plaza",
-          "Sacsayhuam\u00e1n Temple"
-        ]
-      },
-      {
-        "type": "monument",
-        "style": "hybrid",
-        "name": "Cusco Monument to the Sun",
-        "pos": [
-          125,
-          -25
-        ],
-        "radius_m": 12,
-        "one_liner": "A massive stone monument dedicated to the worship of Inti, the Inca sun god.",
-        "because": "The continued reverence for the Inca pantheon has led to the construction of this grand tribute to their deity.",
-        "depends_on": [
-          "Cusco Market",
-          "Tambomachay Fortification"
-        ]
-      },
-      {
-        "type": "watchtower",
-        "style": "ancient",
-        "name": "Qenqo Watchtower",
-        "pos": [
-          -125,
-          -75
-        ],
-        "radius_m": 20,
-        "one_liner": "A ancient watchtower built to monitor the surrounding countryside for signs of threat.",
-        "because": "The continued need for vigilance has led to ongoing maintenance and repair efforts at this strategic outpost.",
-        "depends_on": [
-          "Cusco Research Institute"
-        ]
-      },
-      {
-        "type": "market",
-        "style": "medieval",
-        "name": "Aguas Calientes Market",
-        "pos": [
-          75,
-          -100
-        ],
-        "radius_m": 15,
-        "one_liner": "A bustling marketplace catering to the needs of travelers and traders on the nearby train line.",
-        "because": "The Inca Empire's continued control over transportation routes has allowed for the growth of this thriving market.",
-        "depends_on": [
-          "Cusco Monument to the Sun"
-        ]
-      },
-      {
-        "type": "lab",
-        "style": "industrial",
-        "name": "Aguas Calientes Research Facility",
-        "pos": [
-          -50,
-          -125
-        ],
-        "radius_m": 10,
-        "one_liner": "A cutting-edge research facility focused on preserving and advancing traditional Inca knowledge.",
-        "because": "The Inca Empire's continued commitment to scientific progress has led to the establishment of this state-of-the-art institution.",
-        "depends_on": [
-          "Tambomachay Fortification"
-        ]
-      },
-      {
-        "type": "fort",
-        "style": "prehistoric",
-        "name": "Qorikancha Fortification",
-        "pos": [
-          100,
-          25
-        ],
-        "radius_m": 18,
-        "one_liner": "An ancient fortress built to protect the Inca Empire's sacred sites and spiritual leaders.",
-        "because": "The continued importance of this strategic location has led to ongoing efforts to maintain and upgrade its defenses.",
-        "depends_on": [
-          "Qenqo Watchtower"
-        ]
-      },
-      {
-        "type": "monument",
-        "style": "hybrid",
-        "name": "Cusco Monument to the Earth",
-        "pos": [
-          -25,
-          50
-        ],
-        "radius_m": 12,
-        "one_liner": "A massive stone monument dedicated to the worship of Pachamama, the Inca earth mother.",
-        "because": "The continued reverence for the Inca pantheon has led to the construction of this grand tribute to their deity.",
-        "depends_on": [
-          "Cusco Market",
-          "Qorikancha Fortification"
-        ]
-      },
-      {
-        "type": "plaza",
-        "style": "ancient",
-        "name": "Sapa Plaza",
-        "pos": [
-          25,
-          75
-        ],
-        "radius_m": 12,
-        "one_liner": "A quiet plaza dedicated to the contemplation and introspection of Inca spiritual leaders.",
-        "because": "The continued importance of this sacred site has led to ongoing efforts to maintain its tranquility and beauty.",
-        "depends_on": [
-          "Cusco Monument to the Earth"
-        ]
-      },
-      {
-        "type": "lab",
-        "style": "industrial",
-        "name": "Sacred Valley Research Institute",
-        "pos": [
-          -100,
-          25
-        ],
-        "radius_m": 10,
-        "one_liner": "A cutting-edge research facility focused on preserving and advancing traditional Inca knowledge.",
-        "because": "The Inca Empire's continued commitment to scientific progress has led to the establishment of this state-of-the-art institution.",
-        "depends_on": [
-          "Sapa Plaza"
-        ]
-      }
-    ]
+	"size_m": [
+	  250,
+	  250
+	],
+	"terrain": {
+	  "type": "flat",
+	  "seed": 12345
+	},
+	"biome": "desert",
+	"mood": {
+	  "sky": "clear",
+	  "lighting": "warm"
+	},
+	"pois": [
+	  {
+		"type": "market",
+		"style": "prehistoric",
+		"name": "Kharga's Old Town",
+		"pos": [
+		  -62,
+		  -12
+		],
+		"radius_m": 15,
+		"one_liner": "A bustling market filled with merchants trading in dates and grains.",
+		"because": "The absence of pharaohs led to a decline in trade and commerce, but the people adapted by creating smaller, more local markets like this one.",
+		"depends_on": []
+	  },
+	  {
+		"type": "lab",
+		"style": "medieval",
+		"name": "The Water Management Lab",
+		"pos": [
+		  42,
+		  -82
+		],
+		"radius_m": 12,
+		"one_liner": "A makeshift laboratory where locals experiment with innovative methods for harvesting water from the nearby springs.",
+		"because": "With no centralized pharaonic authority, local ingenuity and experimentation became crucial for survival in this arid region.",
+		"depends_on": [
+          "Kharga's Old Town"
+		]
+	  },
+	  {
+		"type": "factory",
+		"style": "industrial",
+		"name": "The Date Oil Refinery",
+		"pos": [
+		  -12,
+		  62
+		],
+		"radius_m": 18,
+		"one_liner": "A small industrial facility that processes date oil for export to other regions.",
+		"because": "As trade networks reformed in the absence of pharaohs, local entrepreneurs saw an opportunity to capitalize on the region's abundant resources.",
+		"depends_on": [
+          "The Water Management Lab"
+		]
+	  },
+	  {
+		"type": "nest",
+		"style": "futuristic",
+		"name": "The Avian Research Facility",
+		"pos": [
+		  82,
+		  12
+		],
+		"radius_m": 10,
+		"one_liner": "A cutting-edge research center focused on studying and conserving the region's unique bird species.",
+		"because": "With no pharaonic influence, local scientists were free to pursue innovative and unconventional research projects like this one.",
+		"depends_on": [
+          "The Date Oil Refinery"
+		]
+	  },
+	  {
+		"type": "fort",
+		"style": "medieval",
+		"name": "Kharga's Fortified Walls",
+		"pos": [
+		  -12,
+		  -62
+		],
+		"radius_m": 20,
+		"one_liner": "A fortified wall system constructed to protect the local population from external threats.",
+		"because": "The absence of pharaohs led to a power vacuum, and local factions began constructing defensive structures to secure their territories.",
+		"depends_on": [
+          "Kharga's Old Town"
+		]
+	  },
+	  {
+		"type": "plaza",
+		"style": "modern",
+		"name": "The Oasis Plaza",
+		"pos": [
+		  62,
+		  42
+		],
+		"radius_m": 15,
+		"one_liner": "A vibrant public square filled with cafes, shops, and community events.",
+		"because": "As trade and commerce flourished in the absence of pharaohs, local communities began to build modern amenities like this plaza.",
+		"depends_on": [
+		  "The Water Management Lab",
+          "The Date Oil Refinery"
+		]
+	  },
+	  {
+		"type": "monument",
+		"style": "prehistoric",
+		"name": "The Great Sphinx of Kharga",
+		"pos": [
+		  -82,
+		  42
+		],
+		"radius_m": 25,
+		"one_liner": "A massive stone monument carved to honor the region's unique history and culture.",
+		"because": "In the absence of pharaohs, local communities turned to their own heritage and symbolism for inspiration in building this iconic landmark.",
+		"depends_on": [
+          "Kharga's Fortified Walls"
+		]
+	  },
+	  {
+		"type": "watchtower",
+		"style": "medieval",
+		"name": "The Kharga Watchtower",
+		"pos": [
+		  12,
+		  -82
+		],
+		"radius_m": 18,
+		"one_liner": "A strategically located watchtower used for surveillance and defense.",
+		"because": "With the power vacuum created by pharaohs' absence, local factions constructed these watchtowers to maintain control over their territories.",
+		"depends_on": [
+          "Kharga's Fortified Walls"
+		]
+	  }
+	]
   },
   "global_context": [
-    "The Inca Empire never fell, and its legacy continues to shape the lives of people in the Andes highlands.",
-    "The region is a thriving hub of trade, commerce, and innovation, with a strong emphasis on preserving traditional knowledge and culture.",
-    "However, tensions are rising between the Inca Empire's continued rule and the growing influence of external powers seeking to assert their own dominance over the region."
+	"The New Valley region has been largely isolated from global events due to its remote location and lack of central authority.",
+	"Local communities have developed unique cultural and economic practices in response to the pharaohs' absence.",
+    "The region's rich natural resources, including dates and minerals, continue to play a vital role in local trade networks."
   ]
 }

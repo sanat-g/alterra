@@ -16,8 +16,10 @@ func _ready():
 	reload_from_json()
 
 func reload_from_json():
+
 	for c in get_children():
 		c.queue_free()
+	await get_tree().process_frame
 
 	var data = _load_scene_json()
 	if data == null:
@@ -25,7 +27,6 @@ func reload_from_json():
 		return
 
 	_spawn_pois(data)
-
 func _load_scene_json():
 	var paths := ["user://scene.json", "res://scene.json"]
 
@@ -137,3 +138,4 @@ func _spawn_pois(data):
 		inst3d.set_meta("poi_depends_on", deps)
 
 		add_child(inst3d)
+		

@@ -58,7 +58,7 @@ RELATIONSHIP RULES (must follow):
 
 RULES:
 - Choose ONE focus region most impacted by the scenario.
-- Produce 12–16 POIs.
+- Produce 8-10 POIs.
 - pos x,z must be within -125..125.
 - depends_on must reference existing POI names only.
 - Keep it visually distinctive and plausible.
