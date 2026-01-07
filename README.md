@@ -1,3 +1,5 @@
+[![Alterra Banner](images/alterrabanner.jpg)](https://youtu.be/F_nBlqxyQsU)
+
 # Alterra AI
 
 Alterra is a local AI system that transforms natural-language historical and counterfactual prompts into interactive 3D worlds. It bridges LLM's with real-time game engines by converting non-deterministic AI output into structured, validated scene data consumable by the Godot Engine.
